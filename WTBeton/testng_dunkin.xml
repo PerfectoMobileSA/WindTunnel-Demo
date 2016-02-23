@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testList" parallel="methods" thread-count="8">	
+	
+	<test name="Test">
+		<classes>
+		    <class name="com.perfectomobile.beton.DunkinWT" />
+		 <!-- 
+		<class name="com.perfectomobile.beton.CommunitySignIn" />
+		<class name="com.perfectomobile.beton.KeywordDrivenTest" />
+		 -->
+		</classes>
+
+	</test> <!-- Test -->	
+
+
+	
+</suite> <!-- Suite -->

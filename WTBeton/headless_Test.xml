@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="testList" parallel="instances" thread-count="1">	
+	<parameter name="proxyAddress" value="10.136.32.32"/>
+	<parameter name="password" value="Perfecto12!"/>
+	<parameter name="proxyPort" value="8080"/>
+	<parameter name="URL"  value="demo.perfectomobile.com"/>	
+	<parameter name="user" value="rajp@perfectomobile.com"/>
+	
+	
+	<!-- Run_Mode:= Android/IOS -->
+<!-- 	<parameter name="Run_Mode"  value="Android"/> -->
+	
+	<test name="Android_Raj">
+		<!-- Run_Mode:= Android/IOS -->
+		<parameter name="Run_Mode"  value="Android"/>
+	    <parameter name="deviceID_iphone" value="41EEF156EA10EDAB41632651F7AD2A4C4CB502ED"/> 
+	    <parameter name="deviceID_android" value="30E9D3E3"/> 
+	    <parameter name="appName" value="Maps"/> 
+    	<parameter name="browserType" value="Safari"/> 
+   		<parameter name="deviceCategory" value="iphone"/>
+    	<parameter name="deviceOSVersion" value="ios7"/>
+    	<parameter name="installApp" value="false"/>
+    	<parameter name="thresholdSleep" value="0"/>
+    	<parameter name="thresholdCheck" value="0"/>
+    	<parameter name="proxy" value="false"/>
+    	
+      <!--   <packages>
+	      <package name="com.perfectomobile.beton"/>
+	    </packages> -->  
+	    
+		<classes>
+			<class name="com.perfectomobile.beton.headless.HeadlessTest_Raj" />
+		</classes>
+
+	</test> 
+	
+	
+</suite> 
+ 
