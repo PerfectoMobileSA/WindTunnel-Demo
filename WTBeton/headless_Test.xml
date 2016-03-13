@@ -3,7 +3,7 @@
 
 <suite name="testList" parallel="instances" thread-count="1">	
 	<parameter name="proxyAddress" value="10.136.32.32"/>
-	<parameter name="password" value="Perfecto12!"/>
+	<parameter name="password" value="xxxxxx!"/>
 	<parameter name="proxyPort" value="8080"/>
 	<parameter name="URL"  value="demo.perfectomobile.com"/>	
 	<parameter name="user" value="rajp@perfectomobile.com"/>
